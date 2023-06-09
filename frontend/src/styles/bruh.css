@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
+    color: hwb(69 0% 3%);
+    background-color: rgb(14, 13, 13);
+}
+
+.image-rotate-container {
+    display: flex;
+   
+    align-items: center;
+    height: 280px;   
+}
+
+.rotating-image{
+    height: 200px;
+    width:200px;
+    animation: rotate 5s infinite linear;
+}
+
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  h1{
+    padding-top: 70px;
+  }
+
+  p{
+    padding-bottom: 70px;
+    font-size: large;
+  }
